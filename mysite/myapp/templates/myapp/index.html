@@ -3,9 +3,23 @@
     <head>
        <link rel="stylesheet" href="{% static 'myapp/styles.css' %}">
     </head>
-    <body class="bg-sky-500">
-        <h1>this is index from templates</h1>
+    <body>
+        <nav>
+            <div>
+                <div>
+                    <div>
+                        <div class="flex">
+                            <img class="h-8 w-8" src="{% static 'myapp/img/shop.png' %}" alt="logo"/>
+                            <span class="text-4xl">Pro Shop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
        
+
+
+
         <h2>{% for item in items %}
         <a href="{% url 'myapp:detail' item.id %}">   
              {{ item.id }} | {{ item.name }} | {{ item.price }} | {{ item.description }}<br>
