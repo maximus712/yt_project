@@ -20,6 +20,7 @@ from myapp import views
 from django.conf.urls.static import static
 from django.conf import settings
 
+#базовый путь myapp(можно указать какой угодно базовый т все остальный будут от него )
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('myapp/', include('myapp.urls',namespace='myapp'))
